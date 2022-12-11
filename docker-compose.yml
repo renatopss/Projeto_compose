@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  apahcer:
+    image: httpd
+    container_name: apache-html
+    ports:
+    - '80:80'
+    volumes:
+    - ./website:/usr/local/apache2/htdocs
